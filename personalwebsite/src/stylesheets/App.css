@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+
+.cards-container {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+}
+
+.cards {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.main-page {
+  min-height: 100%;
+  position: relative;
+}
