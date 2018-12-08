@@ -13,6 +13,12 @@ class ImageCard extends PureComponent {
     });
   };
 
+  handleClick = () => {
+    if (this.props.link) {
+      window.open(this.props.link);
+    }
+  };
+
   render() {
     const imageStyles = {
       backgroundImage: `url(${this.props.src})`,
@@ -23,7 +29,11 @@ class ImageCard extends PureComponent {
     const imageClass = `image-card-image ${this.state.hovered ? 'hover' : ''}`;
 
     return (
-      <div className={imageCardClass} onMouseEnter={this.handleHover} onMouseLeave={this.handleHover} >
+      <div 
+        className={imageCardClass} 
+        onClick={this.handleClick}
+        onMouseEnter={this.handleHover} 
+        onMouseLeave={this.handleHover} >
         <div className={imageClass} style={imageStyles} >
           <div className={descriptionClass}>
             <div className="title">

@@ -95,4 +95,12 @@
   .image-card.wide {
     width: 100%;
   } 
+
+  .title {
+    font-size: 15px;
+  }
+
+  .image-card-description.hide {
+    height: 25px;
+  }
 }

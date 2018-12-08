@@ -17,6 +17,7 @@ class App extends Component {
           title={card.title}
           description={card.description}
           wide={card.wide}
+          link={card.link}
         />
       );
     })
