@@ -35,7 +35,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #00B4CC;
+  background-color: #0A516D;
   color: white;
   white-space: nowrap;
   overflow: hidden;
@@ -67,4 +67,32 @@
   box-sizing: border-box;
   font-weight: 200;
   font-size: 17px;
+}
+
+/* Smaller Screen Sizing */
+@media only screen and (max-width: 750px) {
+  .image-card {
+    width: 49%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .image-card.wide {
+    width: 49%;
+  } 
+}
+
+/* Mobile Sizing */
+@media only screen and (max-width: 375px) {
+  .image-card {
+    width: 100%;  
+    margin-left: 0;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .image-card.wide {
+    width: 100%;
+  } 
 }
