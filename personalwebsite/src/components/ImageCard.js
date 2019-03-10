@@ -17,6 +17,9 @@ class ImageCard extends PureComponent {
     if (this.props.link) {
       window.open(this.props.link);
     }
+    if (this.props.callbackPage) {
+      this.props.callback(this.props.callbackPage);
+    }
   };
 
   render() {
@@ -24,15 +27,15 @@ class ImageCard extends PureComponent {
       backgroundImage: `url(${this.props.src})`,
     };
 
-    const imageCardClass = `image-card ${this.props.wide ? 'wide': ''}`;
+    const imageCardClass = `image-card ${this.props.wide ? 'wide' : ''}`;
     const descriptionClass = `image-card-description ${this.state.hovered ? 'show' : 'hide'}`;
-    const imageClass = `image-card-image ${this.state.hovered ? 'hover' : ''}`;
+    const imageClass = `image-card-image ${this.state.hovered ? 'hover' : ''} ${this.props.bordered ? 'bordered' : ''}`;
 
     return (
-      <div 
-        className={imageCardClass} 
+      <div
+        className={imageCardClass}
         onClick={this.handleClick}
-        onMouseEnter={this.handleHover} 
+        onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHover} >
         <div className={imageClass} style={imageStyles} >
           <div className={descriptionClass}>

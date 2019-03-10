@@ -2,8 +2,10 @@ export const cards = [
   {
     title: "ABOUT ME",
     description: "Click here to learn more about who I am, what I do, and why I do it.",
-    imageSrc: "/images/jonah.jpg",
+    imageSrc: "/images/hubspot2.jpg",
     wide: false,
+    link: null,
+    callbackPage: "about",
   },
   {
     title: "LEAGUE OF LEGENDS MATCH HISTORY",
@@ -11,6 +13,7 @@ export const cards = [
     imageSrc: "/images/league.jpg",
     wide: true,
     link: "https://github.com/Jonah-Min/Match-History",
+    callbackPage: null,
   },
   {
     title: "MAGIC THE GATHERING WEB APP",
@@ -18,24 +21,28 @@ export const cards = [
     imageSrc: "/images/magic.png",
     wide: true,
     link: "http://magic.jonahmin.com/",
+    callbackPage: null,
   },
   {
     title: "WORK HISTORY",
     description: "Through internships and co-ops I've bee able to work for many great companies such as UPenn, Rue La La, and HubSpot. Click here to learn more about my work experience.",
     imageSrc: "/images/hubspot.jpeg",
     wide: false,
+    callbackPage: "work"
   },
   {
     title: "PERSONAL ART",
     description: "The hobby I'm most passionate about is Art. I did a personal study of figure drawing for 1.5 years and I'm working on portraits now. Click here to view some of my personal art.",
     imageSrc: "/images/personalArt.jpg",
     wide: false,
+    callbackPage: null,
   },
   {
     title: "PERSONAL PHOTOGRAPHY",
     description: "Photography is something I picked up in high school and have been pursuing as a hobby ever since, I have even won third place in an on-campus competition! Click here to see a gallery of my photos.",
     imageSrc: "/images/monk.jpg",
     wide: false,
+    callbackPage: "photos",
   },
   {
     title: "WEB DEV WORKSHOP",
@@ -43,6 +50,7 @@ export const cards = [
     imageSrc: "/images/webdevworkshop.jpg",
     wide: false,
     link: "http://workshop.jonahmin.com/",
+    callbackPage: null,
   },
   {
     title: "LEAGUE OF LEGENDS DATABASE PROJECT",
@@ -50,5 +58,21 @@ export const cards = [
     imageSrc: "/images/database.png",
     wide: true,
     link: "https://github.com/Jonah-Min/Database-Project",
+    callbackPage: null,
+  },
+  {
+    title: "RESUME",
+    description: "Click here if you would like to view a copy of my resume.",
+    imageSrc: "/images/resume.png",
+    wide: false,
+    link: "/documents/Jonah_Min_Resume.pdf",
+    bordered: true,
+    callbackPage: null,
+  },
+  {
+    title: "PERSONAL LIFE",
+    description: "Click here to learn more about my personal life, including stuff like my hobbies and interests",
+    imageSrc: "/images/personal.jpg",
+    wide: true,
   },
 ];

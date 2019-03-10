@@ -1,0 +1,133 @@
+.header {
+  width: 200px;
+  line-height: 25px;
+  background-color: #0A516D;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: 200;
+  transition: background-color 1.0s ease;
+  -webkit-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 16px 0px rgba(0,0,0,0.75);
+}
+
+.header:hover {
+  background-color: #018790;
+  transition: background-color 1.0s ease;
+}
+
+.about-me-container {
+  height: 100%;
+  width: 80%;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.website-background-image {
+  background-image: url('/images/hubspot.jpeg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  display:inline-block;
+}
+
+.half {
+  height: 500px;
+  display: inline-block;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.half:nth-child(even) {
+  width: 50%;
+  margin-left: 1%;
+}
+
+.half:nth-child(odd) {
+  width: 49%;
+}
+
+.about-who {
+  background-color: #ED6464;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.who-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.about-what {
+  background-color: #343838;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.what-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sase-image {
+  background-image: url('/images/saseconf.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.full {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.about-sase {
+  background-color: #536C8D;
+  color: white;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.sase-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.about-personal {
+  background-color: black;
+}
+
+.personal-drawing {
+  background-image: url('/images/drawing.jpg');
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 48%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
