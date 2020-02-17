@@ -7,7 +7,8 @@ import {
 
 import HomePage from './containers/HomePage';
 import AboutPage from './containers/AboutPage';
-import PhotoPage from './components/PhotoPage';
+import PhotoPage from './containers/PhotoPage';
+import ProjectsPage from './containers/ProjectsPage';
 
 import './stylesheets/App.css';
 
@@ -18,6 +19,9 @@ class App extends Component {
         <Switch>
           <Route path="/about">
             <AboutPage />
+          </Route>
+          <Route path="/projects">
+            <ProjectsPage />
           </Route>
           <Route path="/photos">
             <PhotoPage />
