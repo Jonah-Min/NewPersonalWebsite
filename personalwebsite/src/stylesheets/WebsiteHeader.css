@@ -1,6 +1,7 @@
 .website-header {
   width: 100%;
   text-align: center;
+  margin: 35px 0;
 }
 
 .website-header .name {
@@ -11,7 +12,6 @@
   font-family: 'Andale mono';
   letter-spacing: 3px;
   cursor: pointer;
-  margin-top: 35px;
 }
 
 .website-header .subtext {

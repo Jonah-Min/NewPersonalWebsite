@@ -1,9 +1,27 @@
-.home-page-body {
-  width: 100%;
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
-.nav-card-container {
+.home-page-body {
+  height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  padding: 0 6px 12px 6px;
+}
+
+.nav-card-container {
+  flex-shrink: 1;
+  height: 100%;
+  background-size: cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+  width: 100%;
+  transition: width 0.5s ease;
+  box-sizing: border-box;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  margin: 0 6px;
 }
