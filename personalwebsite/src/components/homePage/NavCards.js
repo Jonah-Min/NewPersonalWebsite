@@ -4,14 +4,14 @@ export default class NavCards extends PureComponent {
   render() {
     const { src, title } = this.props;
 
-    const imageStyles = {
-      backgroundImage: `url('/images/hubspot2.jpg')`,
-    };
+    const imageStyles = { backgroundImage: `url(${src})` };
 
     return (
-      <div className="nav-card-container" style={imageStyles}>
-        {title}
-      </div>
+      <span className="nav-card-container" style={imageStyles}>
+        <span className="nav-card-title">
+          <span className="title">{title}</span>
+        </span>
+      </span>
     )
   }
 }
