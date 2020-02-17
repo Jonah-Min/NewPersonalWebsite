@@ -1,11 +1,25 @@
 .website-header {
   width: 100%;
   text-align: center;
-  font-size: 70px;
-  line-height: 150px;
-  font-weight: 300;
+}
+
+.website-header .name {
+  width: inherit;
+  display: inline-block;
+  font-size: 27px;
   color: #333;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Andale mono';
+  letter-spacing: 3px;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+.website-header .subtext {
+  width: inherit;
+  display: inline-block;
+  font-size: 15px;
+  color: #333;
+  font-family: 'Andale mono';
   letter-spacing: 3px;
   cursor: pointer;
 }

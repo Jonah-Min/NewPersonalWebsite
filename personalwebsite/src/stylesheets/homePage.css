@@ -1,0 +1,9 @@
+.home-page-body {
+  width: 100%;
+}
+
+.nav-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
