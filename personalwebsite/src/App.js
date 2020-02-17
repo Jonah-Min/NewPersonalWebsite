@@ -10,27 +10,32 @@ import AboutPage from './containers/AboutPage';
 import PhotoPage from './containers/PhotoPage';
 import ProjectsPage from './containers/ProjectsPage';
 
+import WebsiteHeader from './components/WebsiteHeader';
+
 import './stylesheets/App.css';
 
 class App extends Component {
   render() {
     return (
-      <Router>
-        <Switch>
-          <Route path="/about">
-            <AboutPage />
-          </Route>
-          <Route path="/projects">
-            <ProjectsPage />
-          </Route>
-          <Route path="/photos">
-            <PhotoPage />
-          </Route>
-          <Route path="/">
-            <HomePage />
-          </Route>
-        </Switch>
-      </Router>
+      <div className="main-app">
+        <Router>
+          <WebsiteHeader />
+          <Switch>
+            <Route path="/about">
+              <AboutPage />
+            </Route>
+            <Route path="/projects">
+              <ProjectsPage />
+            </Route>
+            <Route path="/photos">
+              <PhotoPage />
+            </Route>
+            <Route path="/">
+              <HomePage />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }

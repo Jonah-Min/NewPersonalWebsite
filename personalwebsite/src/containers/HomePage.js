@@ -9,7 +9,6 @@ export default class HomePage extends PureComponent {
   render() {
     return (
       <span className="home-page-container">
-        <WebsiteHeader />
         <span className="home-page-body">
           <NavCards linkTo="/about" src="/images/hubspot2.jpg" title="About" />
           <NavCards center="30%" linkTo="/projects" src="/images/league.jpg" title="Projects" />

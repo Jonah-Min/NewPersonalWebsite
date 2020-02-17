@@ -1,0 +1,38 @@
+.projects-container {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: "Andale mono";
+  color: #333;
+  box-sizing: border-box;
+  padding: 0 8px;
+}
+
+.projects-container .title {
+  box-sizing: border-box;
+  padding: 0 8px;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  font-size: 25px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.title-desc {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 25%;
+  margin-top: 30px;
+}
+
+.projects-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}

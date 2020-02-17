@@ -1,23 +1,25 @@
 .image-card {
   display: inline-block;
   height: auto;
-  width: 32%;
-  margin-left: 1%;
+  flex-basis: 50%;
+  padding: 0 8px;
   margin-bottom: 10px;
   position: relative;
   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.image-card.wide {
-  width: 65%;
+  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  box-sizing: border-box;
 }
 
 .image-card:hover {
   cursor: pointer;
 }
 
+.image-card:hover .image-card-description {
+  height: 55%;
+}
+
 .image-card-image {
+  border: 3px solid #333;
   background-size: cover;
   background-position:center center;
   background-repeat:no-repeat;
@@ -25,14 +27,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  transition: width 0.5s ease;
   box-sizing: border-box;
   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
-.image-card-image.hover {
-  width: 95%;
 }
 
 .image-card-image.bordered {
@@ -40,80 +37,40 @@
 }
 
 .image-card-description {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #0A516D;
+  color: white;
+  display: inline-block;
+  padding: 0 16px;
+  background-color: #333;
   color: white;
   white-space: nowrap;
   overflow: hidden;
   transition: height 0.75s ease;
   text-align: center;
+  height: 40px;
 }
 
-.image-card-description.hide {
-  height: 35px;
+.image-card-description:hover {
+  height: 55%;
 }
 
-.image-card-description.show {
-  height: 67%;
-}
-
-.title {
+.image-card .image-card-image .title {
+  color: #dee4e7;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: 5px;
   box-sizing: border-box;
   text-overflow: ellipsis;
   overflow: hidden;
+  background-position: 0 115%;
 }
 
-.description {
+.image-card .description {
+  color: #dee4e7;
   white-space: normal;
   padding: 15px;
   box-sizing: border-box;
   font-weight: 200;
   font-size: 17px;
-}
-
-/* Smaller Screen Sizing */
-@media only screen and (max-width: 750px) {
-  .image-card {
-    width: 49%;
-    margin-left: 1%;
-    margin-bottom: 10px;
-    position: relative;
-  }
-  
-  .image-card.wide {
-    width: 49%;
-  } 
-}
-
-/* Mobile Sizing */
-@media only screen and (max-width: 375px) {
-  .image-card {
-    width: 100%;  
-    margin-left: 0;
-    margin-bottom: 10px;
-    position: relative;
-  }
-  
-  .image-card.wide {
-    width: 100%;
-  } 
-
-  .title {
-    font-size: 15px;
-  }
-
-  .image-card-description.hide {
-    height: 25px;
-  }
-
-  .image-card-image {
-    height: 350px;
-  }
 }

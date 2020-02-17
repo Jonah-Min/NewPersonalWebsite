@@ -1,14 +1,11 @@
 import React, { PureComponent } from 'react';
 
-import WebsiteHeader from '../components/WebsiteHeader';
-
 import "../stylesheets/AboutPage.css";
 
 class AboutPage extends PureComponent {
   render() {
     return (
       <span className="about-me-container">
-        <WebsiteHeader />
         <span className="website-background-image" />
         <span className="about">
           <span className="title-block">
