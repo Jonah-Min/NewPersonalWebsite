@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import HomePage from './containers/HomePage';
-import AboutPage from './components/AboutPage';
+import AboutPage from './containers/AboutPage';
 import PhotoPage from './components/PhotoPage';
 
 import './stylesheets/App.css';
