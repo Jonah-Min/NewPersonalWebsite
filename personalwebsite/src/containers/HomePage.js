@@ -11,11 +11,11 @@ export default class HomePage extends PureComponent {
       <span className="home-page-container">
         <WebsiteHeader />
         <span className="home-page-body">
-          <NavCards src="/images/hubspot2.jpg" title="About" />
-          <NavCards src="/images/hubspot2.jpg" title="Projects" />
-          <NavCards src="/images/hubspot2.jpg" title="Photos" />
-          <NavCards src="/images/hubspot2.jpg" title="Art" />
-          <NavCards src="/images/hubspot2.jpg" title="Contact me" />
+          <NavCards linkTo="/about" src="/images/hubspot2.jpg" title="About" />
+          <NavCards linkTo="/projects" src="/images/hubspot2.jpg" title="Projects" />
+          <NavCards linkTo="/photos" src="/images/hubspot2.jpg" title="Photos" />
+          <NavCards linkTo="/art" src="/images/hubspot2.jpg" title="Art" />
+          <NavCards linkTo="/contact" src="/images/hubspot2.jpg" title="Contact me" />
         </span>
       </span>
     );

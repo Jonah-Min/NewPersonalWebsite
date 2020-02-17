@@ -1,17 +1,18 @@
 import React, { PureComponent } from 'react';
+import { Link } from 'react-router-dom';
 
 export default class NavCards extends PureComponent {
   render() {
-    const { src, title } = this.props;
+    const { linkTo, src, title } = this.props;
 
     const imageStyles = { backgroundImage: `url(${src})` };
 
     return (
-      <span className="nav-card-container" style={imageStyles}>
+      <Link className="nav-card-container" style={imageStyles} to={linkTo}>
         <span className="nav-card-title">
           <span className="title">{title}</span>
         </span>
-      </span>
+      </Link>
     )
   }
 }
