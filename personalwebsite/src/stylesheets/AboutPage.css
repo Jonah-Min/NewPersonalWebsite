@@ -1,7 +1,6 @@
 .about-me-container {
   display: inline-block;
-  height: 100%;
-  padding: 0 16px 100px 16px;
+  padding: 0 16px 16px 16px;
   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   margin-left: auto;

@@ -1,0 +1,34 @@
+.photo-category-container {
+  display: inline-block;
+  font-family: "Andale mono";
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+}
+
+.photo-category-container .title {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+}
+
+.photo-category-container .images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.photo-category-container .images-container .image-card {
+  flex-basis: 25%;
+  flex-grow: 1;
+  height: 50px;
+}
+
+.photo-category-container .images-container .image-card .image {
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat:no-repeat;
+}

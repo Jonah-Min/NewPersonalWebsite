@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 
-import WebsiteHeader from '../components/WebsiteHeader';
 import NavCards from '../components/homePage/NavCards';
 
 import '../stylesheets/homePage.css';
