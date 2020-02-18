@@ -14,7 +14,7 @@ export default class PhotoCategoryPage extends PureComponent {
 
     return images.map((image, index) => {
       const imgStyles = {
-        backgroundImage: `url(${window.location.host}/images/photography/${this.photoCategory}/${image})`
+        backgroundImage: `url(/images/photography/${this.photoCategory}/${image})`
       };
 
       return (

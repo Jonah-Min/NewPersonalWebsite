@@ -5,6 +5,8 @@
   width: 100%;
   text-align: center;
   color: #333;
+  padding: 0 4px;
+  box-sizing: border-box;
 }
 
 .photo-category-container .title {
@@ -12,6 +14,9 @@
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 110%;
+  padding: 0 4px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .photo-category-container .images-container {
@@ -23,7 +28,8 @@
 .photo-category-container .images-container .image-card {
   flex-basis: 25%;
   flex-grow: 1;
-  height: 50px;
+  padding: 0 4px;
+  box-sizing: border-box;
 }
 
 .photo-category-container .images-container .image-card .image {
@@ -31,4 +37,5 @@
   background-position-y: center;
   background-position-x: center;
   background-repeat:no-repeat;
+  height: 400px;
 }
