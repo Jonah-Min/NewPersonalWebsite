@@ -19,7 +19,6 @@
 }
 
 .image-card-image {
-  border: 3px solid #333;
   background-size: cover;
   background-position:center center;
   background-repeat:no-repeat;

@@ -28,5 +28,11 @@ export const projects = [
     description: "I created this bot as a way to learn Ruby, it uses several APIs to populate the command responses.",
     imageSrc: "/images/discord.png",
     link: "https://github.com/Jonah-Min/JonahBot",
+  },
+  {
+    title: "This website!",
+    description: "I'm very proud of this website, as it was built from scratch using React and completely designed by me. I also had to implement my own lightbox!",
+    imageSrc: "/images/newWebsite.png",
+    link: "https://github.com/Jonah-Min/NewPersonalWebsite",
   }
 ];
