@@ -3,6 +3,7 @@ import React, { PureComponent } from 'react';
 import { photos } from '../data/photography';
 
 import '../stylesheets/photoCategoryPage.css';
+import ImageOverlay from '../components/ImageOverlay';
 
 export default class PhotoCategoryPage extends PureComponent {
   constructor(props) {
@@ -12,36 +13,8 @@ export default class PhotoCategoryPage extends PureComponent {
     }
   }
 
-  componentDidMount() {
-    document.addEventListener("keydown", this.keyPressHandler, false);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener("keydown", this.keyPressHandler, false);
-  }
-
   get photoCategory() {
     return this.props.match.params.photoCategory;
-  }
-
-  keyPressHandler = e => {
-    switch (e.keyCode) {
-      case 27:
-        this.closeImageOverlay();
-        break;
-      case 39:
-        this.openNextImage();
-        break;
-      case 37:
-        this.openPrevImage();
-        break;
-      default:
-        break;
-    }
-  }
-
-  closeImageOverlay = () => {
-    this.setState({ selectedImageIndex: -1 });
   }
 
   openNextImage = () => {
@@ -60,6 +33,10 @@ export default class PhotoCategoryPage extends PureComponent {
       && selectedImageIndex < photos[this.photoCategory].photos.length) {
       this.setState({ selectedImageIndex: selectedImageIndex - 1 });
     }
+  }
+
+  closeImageOverlay = () => {
+    this.setState({ selectedImageIndex: -1 });
   }
 
   onImageClick = index => {
@@ -87,15 +64,19 @@ export default class PhotoCategoryPage extends PureComponent {
     const title = photos[this.photoCategory].title;
     const selectedImage = photos[this.photoCategory].photos[selectedImageIndex];
     const imageSelected = selectedImageIndex > -1;
-    const overlayClass = `image-overlay ${imageSelected ? 'show' : ''}`;
+    const imageUrl = `/images/photography/${this.photoCategory}/${selectedImage}`;
     const photosClass = `photo-category-container ${imageSelected ? 'no-scroll' : ''}`;
-    const overlayStyle = imageSelected > -1
-      ? { backgroundImage: `url(/images/photography/${this.photoCategory}/${selectedImage}` }
-      : {};
 
     return (
       <div className={photosClass}>
-        <div className={overlayClass} style={overlayStyle} />
+        {imageSelected && (
+          <ImageOverlay
+            alt={selectedImage}
+            imageUrl={imageUrl}
+            openNextImage={this.openNextImage}
+            openPrevImage={this.openPrevImage}
+            closeImageOverlay={this.closeImageOverlay} />
+        )}
         <span className="title">{title}</span>
         <div className="images-container">
           {this.renderImages()}

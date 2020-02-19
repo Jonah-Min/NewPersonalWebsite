@@ -45,21 +45,28 @@
 }
 
 .image-overlay {
-  background-image: none;
-}
-
-.image-overlay.show {
   background-color: rgba(0,0,0,0.75);
   box-sizing: border-box;
-  padding: 15%;
+  padding: 1%;
   height: 100%;
   width: 100%;
-  background-size: auto 97%;
-  background-position-y: center;
-  background-position-x: center;
-  background-repeat:no-repeat;
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.image-overlay .image {
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat:no-repeat;
+  height: 100%;
+  z-index: 1000;
+}
+
+.image-overlay .left-arrow {
+  position: absolute;
+  left: 0;
+  content: "<";
 }
