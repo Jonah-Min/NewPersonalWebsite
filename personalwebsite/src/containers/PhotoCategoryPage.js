@@ -13,6 +13,10 @@ export default class PhotoCategoryPage extends PureComponent {
     }
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   get photoCategory() {
     return this.props.match.params.photoCategory;
   }
