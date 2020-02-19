@@ -5,8 +5,19 @@ import { photos } from '../data/photography';
 import '../stylesheets/photoCategoryPage.css';
 
 export default class PhotoCategoryPage extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedImage: -1,
+    }
+  }
+
   get photoCategory() {
     return this.props.match.params.photoCategory;
+  }
+
+  onImageClick = index => {
+    this.setState({ selectedImageIndex: index });
   }
 
   renderImages() {
@@ -18,7 +29,7 @@ export default class PhotoCategoryPage extends PureComponent {
       };
 
       return (
-        <div key={index} className="image-card">
+        <div key={index} className="image-card" onClick={() => this.onImageClick(index)}>
           <div className="image" style={imgStyles} />
         </div>
       );
@@ -26,10 +37,19 @@ export default class PhotoCategoryPage extends PureComponent {
   }
 
   render() {
+    const { selectedImageIndex } = this.state;
     const title = photos[this.photoCategory].title;
+    const selectedImage = photos[this.photoCategory].photos[selectedImageIndex];
+    const imageSelected = selectedImageIndex > -1;
+    const overlayClass = `image-overlay ${imageSelected ? 'show' : ''}`;
+    const photosClass = `photo-category-container ${imageSelected ? 'no-scroll' : ''}`;
+    const overlayStyle = imageSelected > -1
+      ? { backgroundImage: `url(/images/photography/${this.photoCategory}/${selectedImage}` }
+      : {};
 
     return (
-      <div className="photo-category-container">
+      <div className={photosClass}>
+        <div className={overlayClass} style={overlayStyle} />
         <span className="title">{title}</span>
         <div className="images-container">
           {this.renderImages()}
@@ -37,4 +57,5 @@ export default class PhotoCategoryPage extends PureComponent {
       </div>
     );
   }
+
 }
