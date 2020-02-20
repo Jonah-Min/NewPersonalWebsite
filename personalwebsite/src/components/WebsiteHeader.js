@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react';
 
 import { Link } from 'react-router-dom';
 
-import "../stylesheets/WebsiteHeader.css";
+import "../stylesheets/websiteHeader.css";
 
 class WebsiteHeader extends PureComponent {
   render() {

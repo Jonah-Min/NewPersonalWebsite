@@ -1,0 +1,55 @@
+.contact-container {
+  display: inline-block;
+  font-family: "Andale mono";
+  font-size: 25px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #333;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.contact-container .title {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+  padding: 0 4px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.contact-container .description {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+  padding: 0 25%;
+  margin-bottom: 50px;
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.contact-container .contact-info {
+  width: 25%;
+  font-size: 18px;
+  flex-direction: column;
+  align-content: center;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  letter-spacing: 2px;
+  color: black;
+}
+
+.contact-container .insta-icon {
+  line-height: 18px;
+}
+
+.contact-container .insta-icon svg {
+  vertical-align: middle;
+  margin-right: 4px;
+}

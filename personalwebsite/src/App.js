@@ -11,10 +11,11 @@ import PhotoPage from './containers/PhotoPage';
 import ProjectsPage from './containers/ProjectsPage';
 import PhotoCategoryPage from './containers/PhotoCategoryPage';
 import ArtPage from './containers/ArtPage';
+import ContactPage from './containers/ContactPage';
 
 import WebsiteHeader from './components/WebsiteHeader';
 
-import './stylesheets/App.css';
+import './stylesheets/app.css';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/photos/:photoCategory" component={PhotoCategoryPage} />
             <Route path="/photos" component={PhotoPage} />
             <Route path="/art" component={ArtPage} />
+            <Route path="/contact" component={ContactPage} />
             <Route path="/" component={HomePage} />
           </Switch>
         </Router>

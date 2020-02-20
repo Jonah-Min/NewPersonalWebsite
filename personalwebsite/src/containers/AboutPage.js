@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-import "../stylesheets/AboutPage.css";
+import "../stylesheets/aboutPage.css";
 
 class AboutPage extends PureComponent {
   render() {
