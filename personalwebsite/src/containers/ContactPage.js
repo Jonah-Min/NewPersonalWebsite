@@ -11,6 +11,7 @@ export default class ContactPage extends PureComponent {
           If you would like to contact me about business inquiries please use the email address below or message me on Instargram.
         </span>
         <span className="contact-info">
+          <div className="image" /><br /><br />
           jonah.min.photography@gmail.com<br />
           <span className="insta-icon">
             <svg height="20px" width="20px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-instagram-square fa-w-14 fa-3x">
