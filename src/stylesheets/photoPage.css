@@ -39,6 +39,7 @@
   transition: background .5s;
   background-position: 0 0.2em;
   font-family: "Andale mono";
+  font-size: 22px;
 }
 
 .photo-container .photo-card:hover .title {
