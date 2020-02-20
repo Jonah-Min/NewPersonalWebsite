@@ -1,0 +1,85 @@
+.art-container {
+  display: inline-block;
+  font-family: "Andale mono";
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
+.art-container .title {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+  padding: 0 4px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.art-container .description {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 110%;
+  padding: 0 25%;
+  margin-bottom: 30px;
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.art-container .images-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.art-container .images-container .art-card {
+  flex-basis: 25%;
+  flex-grow: 1;
+  padding: 4px 4px; 
+  box-sizing: border-box;
+}
+
+.art-container .images-container .art-card .art {
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat:no-repeat;
+  height: 400px;
+}
+
+.art-container.no-scroll {
+  overflow: hidden;
+}
+
+.image-overlay {
+  background-color: rgba(0,0,0,0.75);
+  box-sizing: border-box;
+  padding: 1%;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-overlay .image {
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat:no-repeat;
+  height: 100%;
+  z-index: 1000;
+}
+
+.image-overlay .left-arrow {
+  position: absolute;
+  left: 0;
+  content: "<";
+}
