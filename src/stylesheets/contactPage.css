@@ -37,17 +37,17 @@
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 110%;
-  padding: 0 25%;
+  padding: 0 30%;
   margin-bottom: 50px;
   display: inline-block;
   width: 100%;
-  font-size: 15px;
+  font-size: 20px;
   box-sizing: border-box;
 }
 
 .contact-container .contact-info {
   width: 100%;
-  font-size: 18px;
+  font-size: 22px;
   flex-direction: column;
   align-content: center;
   display: inline-block;
