@@ -7,9 +7,8 @@
 .website-header .name {
   width: inherit;
   display: inline-block;
-  font-size: 30px;
+  font-size: 42px;
   color: #333;
-  font-family: 'Andale mono';
   letter-spacing: 3px;
   cursor: pointer;
 }
@@ -19,8 +18,7 @@
   display: inline-block;
   font-size: 15px;
   color: #333;
-  font-family: 'Andale mono';
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   cursor: pointer;
 }
 

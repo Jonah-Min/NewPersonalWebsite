@@ -54,7 +54,6 @@
 
 .image-card .image-card-image .title {
   color: #dee4e7;
-  font-weight: bold;
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -68,7 +67,7 @@
 .image-card .description {
   color: #dee4e7;
   white-space: normal;
-  padding: 20px;
+  padding: 15px;
   box-sizing: border-box;
   font-weight: 200;
   font-size: 16px;

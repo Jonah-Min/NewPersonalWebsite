@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     title: "Discord bot",
-    description: "I created this bot as a way to learn Ruby, it uses several APIs to populate the command responses.",
+    description: "I created this bot as a way to learn Ruby, it uses several APIs to populate the command responses. Written as an attempt to learn Ruby while also learning more about how to hook up bots to text channels.",
     imageSrc: "/images/discord.png",
     link: "https://github.com/Jonah-Min/JonahBot",
   },

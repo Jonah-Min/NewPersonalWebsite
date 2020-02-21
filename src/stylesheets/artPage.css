@@ -1,6 +1,5 @@
 .art-container {
   display: inline-block;
-  font-family: "Andale mono";
   font-size: 25px;
   width: 100%;
   text-align: center;
@@ -28,7 +27,7 @@
   margin-bottom: 30px;
   display: inline-block;
   width: 100%;
-  font-size: 22px;
+  font-size: 18px;
   box-sizing: border-box;
 }
 
