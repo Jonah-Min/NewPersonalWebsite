@@ -39,8 +39,7 @@
   color: white;
   display: inline-block;
   padding: 0 16px;
-  background-color: #333;
-  color: white;
+  background-color: #1f1f1f;
   white-space: nowrap;
   overflow: hidden;
   transition: height 0.75s ease;
@@ -53,7 +52,6 @@
 }
 
 .image-card .image-card-image .title {
-  color: #dee4e7;
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
@@ -65,10 +63,9 @@
 }
 
 .image-card .description {
-  color: #dee4e7;
   white-space: normal;
   padding: 15px;
   box-sizing: border-box;
   font-weight: 200;
-  font-size: 16px;
+  font-size: 18px;
 }

@@ -65,8 +65,9 @@ export default class PhotoCategoryPage extends PureComponent {
 
   render() {
     const { selectedImageIndex } = this.state;
-    const title = photos[this.photoCategory].title;
-    const selectedImage = photos[this.photoCategory].photos[selectedImageIndex];
+    const photoCategory = photos[this.photoCategory];
+    const { title, description } = photoCategory;
+    const selectedImage = photoCategory.photos[selectedImageIndex];
     const imageSelected = selectedImageIndex > -1;
     const imageUrl = `/images/photography/${this.photoCategory}/${selectedImage}`;
     const photosClass = `photo-category-container ${imageSelected ? 'no-scroll' : ''}`;
@@ -82,6 +83,7 @@ export default class PhotoCategoryPage extends PureComponent {
             closeImageOverlay={this.closeImageOverlay} />
         )}
         <span className="title">{title}</span>
+        <span className="description">{description}</span>
         <div className="images-container">
           {this.renderImages()}
         </div>

@@ -10,7 +10,10 @@ export default class NavCards extends PureComponent {
     const { center, linkTo, src, title } = this.props;
 
     const imageStyles = {
-      backgroundImage: `url(${src})`,
+      backgroundImage: `linear-gradient(
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)
+      ), url(${src})`,
       'background-position-x': center,
     };
 

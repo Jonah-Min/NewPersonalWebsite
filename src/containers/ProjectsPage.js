@@ -27,7 +27,14 @@ export default class ProjectsPage extends PureComponent {
         <span className="title">Projects</span>
         <span className="title-desc">
           When I get the chance I like to create fun projects in various
-          different technologies and languages. Here are some of my favorites.
+          different technologies and languages. Here are some of my favorites.<br />
+          <a
+            className="github"
+            href="https://github.com/Jonah-Min"
+            target="_blank"
+            rel="noopener noreferrer" >
+            All code can be found on my GitHub.
+          </a>
         </span>
         <span className="projects-list">
           {this.renderProjects()}

@@ -8,7 +8,7 @@ export default class ContactPage extends PureComponent {
       <div className="contact-container">
         <span className="title">Contact Me</span>
         <span className="description">
-          If you would like to contact me about business inquiries please use the email address below or message me on Instargram.
+          If you would like to contact me about business inquiries please use the email address below or message me on Instagram.
         </span>
         <span className="contact-info">
           <div className="image" /><br /><br />
