@@ -14,7 +14,7 @@ export default class NavCards extends PureComponent {
         rgba(0, 0, 0, 0.25), 
         rgba(0, 0, 0, 0.25)
       ), url(${src})`,
-      'background-position-x': center,
+      backgroundPositionX: center,
     };
 
     return (
