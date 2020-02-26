@@ -1,13 +1,9 @@
 .image-card {
-  display: inline-block;
-  height: auto;
   flex-basis: 50%;
   flex-grow: 1;
   padding: 0 8px;
   margin-bottom: 10px;
   position: relative;
-  -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-  animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
   box-sizing: border-box;
 }
 
