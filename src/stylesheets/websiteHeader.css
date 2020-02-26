@@ -24,8 +24,10 @@
 }
 
 /* Mobile Sizing */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 811px) {
   .website-header {
     font-size: 45px;
+    padding: 0 16px;
+    box-sizing: border-box;
   }
 }

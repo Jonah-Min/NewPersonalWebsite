@@ -45,3 +45,11 @@
   color: #333;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 811px) {
+  .title-desc {
+    padding: 0 1%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+}

@@ -83,3 +83,14 @@
   left: 0;
   content: "<";
 }
+
+@media only screen and (max-width: 811px) {
+  .art-container .description {
+    padding: 0 1%;
+  }
+
+  .art-container .images-container .art-card {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}

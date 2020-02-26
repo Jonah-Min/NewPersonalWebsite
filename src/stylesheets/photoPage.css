@@ -44,3 +44,14 @@
 .photo-container .photo-card:hover .title {
   background-size: 100% 100%;
 }
+
+@media only screen and (max-width: 811px) {
+  .photo-container .photo-card {
+    position: relative;
+    padding: 4px 4px;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    flex-grow: 1;
+    cursor: pointer;
+  }
+}

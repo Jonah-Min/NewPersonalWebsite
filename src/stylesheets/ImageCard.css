@@ -2,6 +2,7 @@
   display: inline-block;
   height: auto;
   flex-basis: 50%;
+  flex-grow: 1;
   padding: 0 8px;
   margin-bottom: 10px;
   position: relative;
@@ -45,6 +46,8 @@
   transition: height 0.75s ease;
   text-align: center;
   height: 40px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .image-card-description:hover {
@@ -68,4 +71,24 @@
   box-sizing: border-box;
   font-weight: 200;
   font-size: 18px;
+}
+
+@media only screen and (max-width: 811px) {
+  .image-card-description {
+    height: 35%;
+    overflow: scroll;
+  }
+
+  .image-card {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    position: relative;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    box-sizing: border-box;
+  }
 }

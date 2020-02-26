@@ -61,3 +61,15 @@
 .about .description-block a {
   color: #333;
 }
+
+@media only screen and (max-width: 811px) {
+  .about-me-container {
+    display: inline-block;
+    padding: 0 1% 16px 1%;
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+  }
+}
