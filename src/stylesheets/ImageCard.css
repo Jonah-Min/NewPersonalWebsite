@@ -42,7 +42,7 @@
   transition: height 0.75s ease;
   text-align: center;
   height: 40px;
-  max-width: 100%;
+  width: 100%;
   box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@
   .image-card {
     display: inline-block;
     height: auto;
-    max-width: 100%;
+    width: 100%;
     flex-basis: 100%;
     flex-grow: 1;
     margin-bottom: 10px;
