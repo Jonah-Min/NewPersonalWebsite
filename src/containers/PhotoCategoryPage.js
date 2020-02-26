@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { isMobile } from "react-device-detect";
 
 import { photos } from '../data/photography';
 
@@ -44,7 +45,15 @@ export default class PhotoCategoryPage extends PureComponent {
   }
 
   onImageClick = index => {
-    this.setState({ selectedImageIndex: index });
+    const photoCategory = photos[this.photoCategory];
+    const selectedImage = photoCategory.photos[index];
+    const imageUrl = `/images/photography/${this.photoCategory}/${selectedImage}`;
+
+    if (!isMobile) {
+      this.setState({ selectedImageIndex: index });
+    } else {
+      window.location = imageUrl;
+    }
   }
 
   renderImages() {

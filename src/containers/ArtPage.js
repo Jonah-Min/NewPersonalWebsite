@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { isMobile } from "react-device-detect";
 
 import Art from '../data/art';
 
@@ -40,7 +41,13 @@ export default class ArtPage extends PureComponent {
   }
 
   onImageClick = index => {
-    this.setState({ selectedImageIndex: index });
+    const selectedImage = Art[index];
+    const imageUrl = `/images/personalArt/${selectedImage}`;
+    if (!isMobile) {
+      this.setState({ selectedImageIndex: index });
+    } else {
+      window.location = imageUrl;
+    }
   }
 
   renderImages() {
